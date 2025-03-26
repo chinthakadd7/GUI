@@ -1,0 +1,28 @@
+﻿<Window x:Class="DesktopApp.FoodMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="FoodMenu" Height="575" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <!-- Header -->
+        <Border Background="Black" Grid.Row="0" VerticalAlignment="Top" Height="60" Opacity="0.9" BorderBrush="Black">
+            <TextBlock Text="LuxStay Resort" FontSize="24" FontWeight="Bold" Foreground="White" Opacity="1" FontFamily="Georgia"
+               HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Border>
+
+        <!-- DataGrid to display food items -->
+        <TextBlock Text="Food Menu" FontSize="24" FontWeight="Bold" Foreground="White" FontFamily="Georgia"
+               HorizontalAlignment="Left" VerticalAlignment="Top" Margin="557,16,0,0" RenderTransformOrigin="0.946,0.042"/>
+        <!-- Back Button -->
+        <Button Content="Back" 
+                Margin="50,448,667,25"
+                Click="BackButton_Click"
+                Background="DarkGreen"
+                Foreground="White"
+                FontFamily="Book Antiqua"
+                FontSize="20" 
+                FontWeight="Bold" 
+                Cursor="Hand" 
+                Opacity="0.7" RenderTransformOrigin="1.054,2.249" />
+    </Grid>
+</Window>

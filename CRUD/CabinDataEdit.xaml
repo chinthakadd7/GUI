@@ -1,0 +1,69 @@
+﻿<Window x:Class="DesktopApp.CDedit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Cabin Management" Height="600" Width="620"
+        Background="Snow"
+         >
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="10">
+
+            <TextBlock Text="Cabin ID:" Margin="5"/>
+
+            <ComboBox x:Name="CabinIDSelectionBox" Margin="5" Width="560" Height="22" 
+            SelectedIndex="0">
+                <ComboBoxItem Content="101"/>
+                <ComboBoxItem Content="102"/>
+                <ComboBoxItem Content="103"/>
+                <ComboBoxItem Content="104"/>
+                <ComboBoxItem Content="105"/>
+                <ComboBoxItem Content="106"/>
+                <ComboBoxItem Content="107"/>
+                <ComboBoxItem Content="108"/>
+                <ComboBoxItem Content="109"/>
+                <ComboBoxItem Content="110"/>
+            </ComboBox>
+
+
+            <TextBlock Text="Cabin Name:" Margin="5"/>
+            <ComboBox x:Name="CabinSelectionBox" Margin="5" Width="560" Height="22" 
+          SelectedIndex="0">
+                <ComboBoxItem Content="Royal Beach Palace"/>
+                <ComboBoxItem Content="Tropical Garden Suite"/>
+                <ComboBoxItem Content="Ocean View Suite"/>
+                <ComboBoxItem Content="Beachfront Villa"/>
+            </ComboBox>
+
+            <TextBlock Text="Check-In Date:" Margin="5"/>
+            <DatePicker x:Name="CheckInDatePicker" Margin="5"/>
+
+            <TextBlock Text="Check-Out Date:" Margin="5"/>
+            <DatePicker x:Name="CheckOutDatePicker" Margin="5"/>
+
+            <TextBlock Text="Guest Name:" Margin="5"/>
+            <TextBox x:Name="NameTextBox" GotFocus="ClearTextBox" Margin="5"/>
+            <TextBlock Text="Phone Number:" Margin="5"/>
+            <TextBox x:Name="PhoneNoTextBox" GotFocus="ClearTextBox" Margin="5"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
+                <Button Content="Create" Click="CreateButton_Click" Width="80" Margin="5" Background="#FFD2EDFF" />
+                <Button Content="Read" Click="ReadButton_Click" Width="80" Margin="5" Background="#FFD2EDFF"/>
+                <Button Content="Update" Click="UpdateButton_Click" Width="80" Margin="5" Background="#FFD2EDFF"/>
+                <Button Content="Delete" Click="DeleteButton_Click" Width="80" Margin="5" Background="#FFFFB6B6"/>
+                <Button Content="Cancel" Click="CancelButton_Click" Width="80" Margin="5"/>
+            </StackPanel>
+
+            <ListView x:Name="ItemList" Height="200" Margin="5" SelectionChanged="ItemList_SelectionChanged">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Id}" Width="50"/>
+                        <GridViewColumn Header="Cabin" DisplayMemberBinding="{Binding CabinName}" Width="100"/>
+                        <GridViewColumn Header="Check-In" DisplayMemberBinding="{Binding CheckIn}" Width="120"/>
+                        <GridViewColumn Header="Check-Out" DisplayMemberBinding="{Binding CheckOut}" Width="120"/>
+                        <GridViewColumn Header="Guest" DisplayMemberBinding="{Binding Name}" Width="100"/>
+                        <GridViewColumn Header="Phone" DisplayMemberBinding="{Binding PhoneNo}" Width="100"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </StackPanel>
+    </Grid>
+</Window>

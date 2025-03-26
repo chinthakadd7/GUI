@@ -1,0 +1,196 @@
+﻿<Window x:Class="DesktopApp.HomePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="LuxStay Resort - Home" Height="575" Width="800"
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True"
+        WindowStyle="None">
+
+    <Window.Background>
+        <ImageBrush ImageSource="/Image/Background.jpg" Stretch="UniformToFill"/>
+    </Window.Background>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+             
+            <RowDefinition Height="*"/>
+           
+        </Grid.RowDefinitions>
+
+        
+        <Border Background="Black" Grid.Row="0" VerticalAlignment="Top" Height="60" Opacity="0.9" BorderBrush="Black">
+            <TextBlock Text="LuxStay Resort" FontSize="24" FontWeight="Bold" Foreground="White" Opacity="1"  FontFamily="Georgia"
+        HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Border>
+
+         
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Width="400">
+
+             
+            <Button Content="Cabin Updates"
+                    Height="55" Width="300"
+                    Click="CabinUpdates_Click"
+                    FontSize="20" FontFamily="Georgia"
+                    Cursor="Hand" FontWeight="Bold"
+                    Foreground="White" Margin="10">
+                <Button.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#FF005C97"/>
+                        <GradientStop Color="#FF001A6C" Offset="1"/>
+                    </RadialGradientBrush>
+                </Button.Background>
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Background">
+                            <Setter.Value>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                    <GradientStop Color="#FF005C97" Offset="0"/>
+                                    <GradientStop Color="#FF002F5E" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Property="BorderBrush" Value="Transparent"/>
+                        <Setter Property="Opacity" Value="0.9"/>
+                        <Setter Property="Effect">
+                            <Setter.Value>
+                                <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="2"/>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Opacity" Value="1"/>
+                                <Setter Property="Background">
+                                    <Setter.Value>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                            <GradientStop Color="#FF0077C2" Offset="0"/>
+                                            <GradientStop Color="#FF00558C" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+
+            <Button Content="Food Menu"
+                    Height="55" Width="300"
+                    Click="FoodMenu_Click"
+                    FontSize="20" FontFamily="Georgia"
+                    Cursor="Hand" FontWeight="Bold"
+                    Foreground="White" Margin="10">
+                <Button.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#FF005C97"/>
+                        <GradientStop Color="#FF001A6C" Offset="1"/>
+                    </RadialGradientBrush>
+                </Button.Background>
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Background">
+                            <Setter.Value>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                    <GradientStop Color="#FF005C97"/>
+                                    <GradientStop Color="#FF001A6C" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Property="BorderBrush" Value="Transparent"/>
+                        <Setter Property="Opacity" Value="0.9"/>
+                        <Setter Property="Effect">
+                            <Setter.Value>
+                                <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="2"/>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Opacity" Value="1"/>
+                                <Setter Property="Background">
+                                    <Setter.Value>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                            <GradientStop Color="#FF0077C2" Offset="0"/>
+                                            <GradientStop Color="#FF00558C" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+
+            <Button Content="Staff Management"
+                    Height="55" Width="300"
+                    Click="StaffManagement_Click"
+                    FontSize="20" FontFamily="Georgia"
+                    Cursor="Hand" FontWeight="Bold"
+                    Foreground="White" Margin="10">
+                <Button.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#FF005C97"/>
+                        <GradientStop Color="#FF001A6C" Offset="1"/>
+                    </RadialGradientBrush>
+                </Button.Background>
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Background">
+                            <Setter.Value>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                    <GradientStop Color="#FF005C97"/>
+                                    <GradientStop Color="#FF001A6C" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Property="BorderBrush" Value="Transparent"/>
+                        <Setter Property="Opacity" Value="0.9"/>
+                        <Setter Property="Effect">
+                            <Setter.Value>
+                                <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="2"/>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Opacity" Value="1"/>
+                                <Setter Property="Background">
+                                    <Setter.Value>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                            <GradientStop Color="#FF0077C2" Offset="0"/>
+                                            <GradientStop Color="#FF00558C" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+
+            
+            <Button Content="Log Out"
+                    Height="45" Width="151"
+                    Click="Login_Out"
+                    FontSize="18" FontWeight="Bold"
+                    Foreground="White" Margin="20"
+                    BorderBrush="Transparent" Background="#D8000000">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Opacity" Value="0.8"/>
+                        <Setter Property="Effect">
+                            <Setter.Value>
+                                <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="2"/>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Opacity" Value="1"/>
+                                <Setter Property="Background" Value="#FF990000"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+
+        </StackPanel>
+    </Grid>
+</Window>
