@@ -1,0 +1,186 @@
+.about-container {
+  background-color: #f8f9fa;
+}
+
+/* Hero Section */
+.about-hero {
+  height: 70vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('https://images.unsplash.com/photo-1573843981267-be1999ff37cd') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-content p {
+  font-size: 1.8rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Vision Section */
+.vision-section {
+  padding: 100px 0;
+  background: white;
+}
+
+.vision-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.vision-content h2 {
+  font-size: 2.5rem;
+  color: #2d3436;
+  margin-bottom: 30px;
+}
+
+.vision-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #636e72;
+  margin-bottom: 50px;
+}
+
+.vision-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00b894;
+}
+
+.stat-label {
+  color: #636e72;
+  font-size: 1.1rem;
+}
+
+/* Features Section */
+.features-section {
+  padding: 100px 0;
+  background: #f8f9fa;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.feature-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: #00b894;
+  margin-bottom: 20px;
+}
+
+/* Values Section */
+.values-section {
+  padding: 100px 0;
+  background: white;
+  text-align: center;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.value-card {
+  padding: 30px;
+  border-radius: 20px;
+  background: #f8f9fa;
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+}
+
+.value-icon {
+  font-size: 2rem;
+  color: #00b894;
+  margin-bottom: 20px;
+}
+
+/* Commitment Section */
+.commitment-section {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.commitment-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.commitment-points {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.point {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.check {
+  color: #00b894;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+
+  .features-grid,
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .vision-stats {
+    flex-direction: column;
+    gap: 30px;
+  }
+} 
